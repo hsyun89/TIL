@@ -1,0 +1,48 @@
+  클래스 앞 : public, (default)
+	  abstract, final
+  생성자 메서드 : public, protected, (default), private
+  멤버변수 : public, protected, (default), private
+	  static, final
+  메서드 : public, protected, (default), private
+	abstract, static, final
+  지역변수 : final
+
+  미션: (1) RuntimeTest클래스를 생성한다.
+         (2) Runtime 클래스의 객체를 생성하여 r이라는 Runtime 형의 변수에 저장한다.
+
+  Runtime 클래스는 singleton 패턴을 적용하여 만들어진 클래스이다.
+  singleton 패턴 : 클래스의 객체를 여러번 생성해도 내부적으로 하나의 객체를 공유하게 하는것
+
+  객체 생성을 대신 해주는 일반 메서드를 팩토리 메서드라고 한다.
+
+ [ 인터페이스 ]
+ - 단일 상속만 지원하는 자바의 구문을 보완하기 위해
+   인터페이스라는 특별한 용도의 클래스 구문을 지원
+ - abstract 클래스와 유사하며 단일 상속의 제한이 없다.
+ - 상속으로만 활용가능, 객체 생성 불가
+ - 일반 메서드는 존재할 수 없다.
+   abstract 메서드로만 구성 가능한 클래스이다.
+
+   interface 인터페이스이름 [ extends 부모인터페이스, ... ] {
+	상수선언
+	abstract 메서드
+	default 메서드
+   }
+
+   class 클래스명 extends 부모클래스명 implements 부모인터페이스, ......{
+	.....
+   }
+
+   class Child extends Parnet implements I1, I2, I3 {
+
+   }
+
+   I1 obj = new Child();
+
+
+
+
+
+
+
+

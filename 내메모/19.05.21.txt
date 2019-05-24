@@ -1,0 +1,24 @@
+java : 기본(core) API
+javax : 확장 API
+-------------------자바만의 API
+org : 어떤 표준 단체에서 제안한 기능을 지원하는 API
+
+[ JDBC (Java DataBase Connectibity) ]
+java.sql, javax.sql
+
+------------------------
+
+(1) 자바프로그램으로 오라클 서버를 접속하는 기능 구현 - ConnectDB
+(2) visitor 테이블의 데이터들을 읽어오는 기능 구현 - VisitorList
+
+Javaexam 이라는 프로젝트에 jdbcexam 패키지를 생성한다.
+
+ojdbc6.jar - 오라클 전용 드라이버, thin driver
+
+------------------------
+
+URL : Unifrom Resource Locator
+	어떤 자원의 위치를 알리는 단일화된 형식의 문자열
+	HTTP URL : 웹 사이트의 주소 문자열
+	JDBC URL : 접속할 DB서버의 정보와 사용할 드라이버 정보를 : 기호로 구분하여 작성한 문자열
+

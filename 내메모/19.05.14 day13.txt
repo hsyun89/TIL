@@ -1,0 +1,30 @@
+  UTF-16 --- 자바가 지원 코드셋 - 한글영문모두 2바이트
+  MS949(EUC-KR, KSC5601, CP949) --- Windows 7
+            한글 2바이트, 영문 1바이트
+			       UTF-16(2byte)	UTF-8(1~4byte)
+            A - 0x41 --------------> \u0041		\u41
+            가 - 0xB0A1 -----------> \u00B0		\EAB080
+                  0xB0A1 -----------> \uAC00
+
+  UTF-8 ?
+
+  [ URL 프로그래밍 ] - IO 프로그래밍 응용
+  - URL  문자열(웹 사이트의 주소 문자열)
+    http://서버의도메인명[:포트번호]/패스/파일
+  - URL이라는 클래스가 제공되어(java.net) 객체 생성시 지정된 URL
+    문자열에 해당되는 사이트의 소스를 받아올 수 있다. - 웹 크롤링
+
+  [ 객체 직렬화 ]
+	package my;
+	class Exam{
+		int num;
+		char minja;
+		double su;
+		:
+	}
+
+	my.Exam[4바이트][4바이트][8바이트]
+  객체에 따로 참조 되어있는 변수들을 하나로 연결해서 저장하기...?
+
+  ObjectOutputStream - writeObject()
+  ObjectInputStream - readObject()

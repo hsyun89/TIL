@@ -1,0 +1,72 @@
+[ DataBase & SQL & JDBC 학습 ] 
+
+SQL: DataBase에 보관된 데이터를 처리하는 언어
+CRUD
+
+[ 오라클 설치시 ] 
+
+관리자(system) 계정의 패스워드 : manager
+
+system : 관리자계정 
+scott : 사용자계정
+hr : 사용자계정
+
+서버&클라이언트
+
+[ 오라클 서버 접근하는 클라이언트 프로그램 ] 
+1. sqlplus 라는 명령
+	가. cmd 창을 연다.
+	나. sqlplus
+2. sqldeveloper 프로그램
+
+
+[ scott 계정 생성 ]
+
+C:\oraclexe\app\oracle\product\11.2.0\server\rdbms\admin
+@C:\oraclexe\app\oracle\product\11.2.0\server\rdbms\admin\scott.sql
+SQL> alter user scott identified by tiger;
+
+
+[ hr 계정 락(lock) 풀기 ]
+alter user hr account unlock;
+alter user hr identified by hr;
+
+[ work 계정 만들기 : SQL 실습시간에 사용 ]
+create user work identified by work;
+grant connect, resource to work;
+
+[ jdbctest 계정 만들기 : JDBC 수업시간에 사용 ]
+create user jdbctest identified by jdbctest;
+grant connect, resource to jdbctest;
+
+
+SELECT *|추출하려는 컬럼명리스트
+FROM 테이블이름
+
+
+SQL> conn scott/tiger
+Connected.
+SQL> show user;
+
+select 추출하려는칼럼명리스트
+from 테이블이름 ----->프로젝션
+
+select * 
+from 테이블이름
+where 추출하려는행들을결정하는비교식 -----> 셀렉션
+
+select 추출하려는 컬럼명리스트
+from 테이블이름
+where 추출하려는행동을결정하는비교식 -------> 셀렉션+프로젝션
+
+
+
+
+
+
+
+
+
+
+
+

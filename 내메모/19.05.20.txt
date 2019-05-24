@@ -1,0 +1,28 @@
+   20일(월) SQL
+   21일(화) SQL, JDBC
+   22일(수) JDBC
+   23일(목) 특강
+   24일(금) SQL&JDBC 평가시험, Web Client(HTML)
+
+
+  이민우-최영선|김유정-박건호|이경준-윤현수|
+  고경준-이정규|박찬우-설동재|고예성-채민현학|
+  이영걸-홍성재|호유송-정승명|김소미-강다영|
+  오현경-전지나|강보성-경  현|한수용-null
+
+
+
+     < ANY (3, 7, 9, 10, 5)
+  N  < ALL (3, 7, 9, 10, 5)
+
+     IN(NOT IN), >ANY, <ANY, >ALL, <ALL, =ANY
+     
+
+    WITH ALIAS명 AS ( SUB쿼리 )
+    SELECT 컬럼명 FROM ALIAS명;
+
+
+   DQL : SELECT
+   DML : INSERT, DELETE, UPDATE, MERGE
+   DDL : CREATE TABLE, DROP TABLE, ALTER TABLE
+   TCL : ROLLBACK, COMMIT

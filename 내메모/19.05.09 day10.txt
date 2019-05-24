@@ -1,0 +1,64 @@
+ [ 자바의 예외 처리 ]
+
+1.컴파일 오류 : 컴파일할 때 발생하는 오류
+	     구문 오류
+2.실행 오류 : 자바 프로그램(실행파일)이 실행하는 동안 발생하는 오류
+	   가.에러 - JVM영역에서 발생하는 오류로 심각한 오류
+		프로그램 실행을 JVM이 강제로 중단시킨다.
+	   나.예외 - 프로그램 영역에서 발생하는 오류로 다소 가벼운 오류
+		기본은 프로그램 실행을 JVM이 강제로 중단시킨다.
+		예외처리라는 구문을 이용하여 중단하지 않고 계속해서 프로그램 실행을 
+		진행하게 하거나 중단 하더라도 적당한 메시지를 출력하게 할 수 있다.
+		
+		1) 런타임 예외 :  예외처리 구현이 선택
+		2) 일반 예외 : 예외처리 구현이 필수
+
+	Object - Throwable - Exception - ........
+				    - RuntimeException - ......
+
+  try, catch, finally, throws - 처리
+  throw - 발생
+
+  ......메서드명([매개변수 선언.....]) throws AException, BExceprion{
+   
+	
+  }
+
+  void setAge(int age){
+	if (age>0)
+		//throw 적당한명칭의예외클래스객체;
+		throw new IllegalArgumentException("음수 나이는 불가함");
+		this.age = age;
+  }
+
+  setAge(-10)
+  
+  class IllegalAgeException extends Exception{
+	IllegalAgeExceprion() {}
+	IllegalAgeExceprion(String m) {
+		super(m);
+	}
+
+  }
+
+  void setAge(int age) throws IllegaAgeException{
+	if (age>0)
+		//throw 적당한명칭의예외클래스객체;
+		throw new IllegalArgumentException("음수 나이는 불가함");
+	this.age = age;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

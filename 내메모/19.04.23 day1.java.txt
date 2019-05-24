@@ -1,0 +1,175 @@
+19-04-23 첫수업
+복습 매일 / 주말에 2시간
+
+선생님PC ip주소
+\\70.12.113.160
+ID: unicode
+PW: student
+
+1. jdk 다운로드	
+	Standard Edition, Enterprise E, Micro E
+	우리는 SE 8을 받아서 한다.
+	JRE는 실행만 된다. 개발을 하려면 JDK를 받아야 함.
+
+
+2. eclipse 다운로드
+	more downloads에
+	Eclipse 2018-12 (4.10)버젼
+	Eclipse IDE for Enterprise Java Developers를 받는다
+
+
+
+3. jDK 설치 및 환경설정
+	가.설치 후 JAVA_HOME 생성하기
+	나.내컴퓨터 설정 고급설정 환경변수 새 시스템변수
+	다.jAVA_HOME
+	라.C:\Program Files\Java\jdk1.8.0_211
+
+ 	b.PATH 수정 - %JAVA_HOME%\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common
+
+ 	c.확인법 cmd 창에 java_version, javac, echo %JAVA_HOME%, echo %PATH%
+
+
+4. 자바 프로그래밍
+	가. 자바프로그램의 구조
+나. 데이터 타임, 변수
+	다. 연산자
+	라. 제어문(조건, 반복, 분기)
+    		if, switch, for , while, do while, break, continue
+	마. 배열(1차원, 2차원)
+	바. OOP1 - 클래스 정의와 객체생성
+	사. OOP2 - 상속, 다형성, 추상클래스와 인터페이스
+	아. 예외처리
+
+5. 이클립스 실행
+	가. Project(개발폴더) javaexam
+ 		1)file - new - other - javeproject
+ 		2)src - new - class - package공란
+ 	나. Web projecet
+ 	다. Sprint project
+  
+
+6. 맛보기 자바 프로그램
+	가. class이름은 FirstApp(클래스명)
+
+7. 자바 특징
+	가. compile(C언어 같은거 운영체제가 바로 실행. 빠름) & interpreter(java script, basic, R 언어 인터프리터가 해석해줌)
+	나. .java -> .class
+	다. 자바에서 쓰는 인터프리터가 JVM
+	라. 다중행: /* ... */
+    	    단일행: //
+	    도큐멘테이션 주석: /** .....*/
+
+8. 클래스
+	public class 클래스명(퍼블릭은 소스이름~~~.java와 클래스명이 같아야함) {
+		public static(정적변수) void(리턴값이 없다) main(string args[]){
+	}
+	}
+	Math, FileReader, FileNotFoundExaception
+
+
+9. 자바의 데이터 타입
+	가. 기본형
+		넘버타입: 정수(byte(1), short(2), int(4), long(8)), 
+		실수(float(4), double(8))
+		문자타입: char(2) - UTF-16
+		논리타입: boolean(?)
+	나. 객체형
+		문자열타입: String
+
+	다. 1, 1.0, '1', "1"
+	1+1 = 2
+	1.0+1 = 2.0
+	'1.0'+1 = 50
+	"1"+1 = "11"
+
+	패키지 - day1
+
+10. 자바 프로그래밍에서 다루게 되는 데이터의 종류
+
+	가. 리터럴: 프로그램 코드에 사용된 데이터 값
+		1) 100, 3.14, true, false, 10L(long형 데이터), 'A', '가'. ' ', '3', ""(null), "A", "ABC" 
+	나. 변수: 데이터 값을 저장하는 메모리상의 방
+	    사용하기 전에 만들어서 사용해야 한다. -변수 선언
+		2)타입명 변수명: 소문자로 시작 why? 클래스명과 혼동됌
+	다. 상수: 변수, 값을 초기화 하면 더 이상 값을 변경할 수 없다.
+		3) fibal 타입명 변수명:
+			모두 대문자
+			MAX_NUMBER, PI, MIN_PRIORITY
+
+11. [ = (대입 연산자, 할당 연산자) ]
+	가.식
+		l-value = r-value
+		변수      변수, 리터럴, 상수, 연산식, 리턴값이 있는 메서드의 호출식
+	나.
+		V1 = 100;, v2 = 10+20;, v4=v1=Math.PI;, v5 = Math.random();
+	다. 큰 값 = 작은 값
+	라. 작은 값 = 큰 값(x) -->강제형변환연산
+		double > float > long > int > short > byte
+		double > float > long > int > char
+		boolean : 절대 다른 타입 불가
+		char + int -> int + int -> int(int보다 작은애들은 무조건 int로 변환 후 연산된다.)
+		char + char -> int + int -> int
+		int + int -> int
+		long + int -> long + long -> long
+		float + doulbe -> double + double -> double
+		long + float -> float + float -> float
+	마. 10(10진수), 010(8진수), 0x10(16진수), 0b10(2진수)
+	바. "결과값="+10+20 -> 결과값=1020
+	    "결과값="+(10+20) -> 결과값=30
+
+12. 자바의 연산자(우선순위 순)
+	가. .(멤버연산자)
+	나. 항(피연산자)의 갯수 : 단항연산자, 이항연산자
+	다. 기능: 강제형변환, 산술, 비교, 논리, 조건, 대입, 복합대입, 증감
+	라. ++, --, +, -, ~, !, (타입)
+	마. *, /, %
+	바. +, -
+	사. >>, >>>, <<
+	아. >, >=, <, <=, ==, !=
+	자. &, |, ^
+	차. &&, 
+	키. ||
+	타. 항1?항2:항3
+	파. =, +=, -=, *=, /=, %=
+
+13. 증감연산자
+	가. 증가연산자: ++, 단항연산자로서 주어진 항의 값을 1증가
+	나. 감소연산자: --, 단항연산자로서 주어진 항의 값을 1감소
+	대부분의 단항연산자들은 연산자가 앞에오고 피연산자가 뒤에온다.
+
+	!flag
+	(int)r_num2
+	-num
+
+	++num;	//전위형 - 먼저 증가시키고 다른 연산을 수행하라
+	num++; //후위형 - 다른 연산을 먼저하고 나중에 증가시켜라
+
+	result = ++num;
+	result = num++;
+	
+	System.out.println(데이터);
+			아규먼트
+
+	System.out.println(num);
+			파라미터
+	System.out.println(num);
+	System.out.println(++num);
+	System.out.println(num++);
+
+14. 자바의 제어문
+	가. 조건제어문: if, switch
+	나. 반복제어문: for, while, do while
+	다. 분기제어문: break, continue, (goto)x
+
+
+
+
+
+
+
+
+
+
+
+

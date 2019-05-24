@@ -1,0 +1,73 @@
+1일차 복습
+자바프로그램의 기본 구조 - 클래스. main()
+데이터 타입 - byte, short, int, long, float, double, boolean
+형변환 - = 연산: r-value(식)ㅡ i-value(변수), boolean 예외
+	산술이항연산(+, -, /, *, %): int 타입보다 작은 타입은 int로 변환
+연산자 - 단항, 이항, 삼항
+	(. 가장높다. = 가장낮다)
+	+연산자: 덧셈, 문자열 결합
+if - 조건 제어문(else, else if)
+	v1 == 100
+	v2 == true
+	v3 == 'A'
+	v4 == "duke" --> v4.equals("duke")
+
+2일차
+
+1. 자바의 반복문
+	가. for: 반복할 횟수를 미리 알고 있을 때, 배열의 데이터 값을 다룰 때.
+	나. while: 어떤 조건이 만족되는 동안 반복
+	다. for(;;) -> 무한루프
+	라. i += 2 -> i = i +2
+
+2. 한글문자의 코드값
+	가. 초기에는 정해진 한글 코드가 없었다.
+	나. 1989년 KSC5601 -> 완성형 한글 코드
+		  EUC -KR
+		  MS949(CP949)
+
+		  가 - 0xB0A1
+	다. 1990년대 유니코드
+	     UTF-16 -> 2바이트
+	     A - \u0041
+	     가 - \uAC00
+	     UTF-8 -> 1~4바이트
+
+3. 자바의 식별자(명칭)규칙 : 클래스명, 메서드명, 변수명, 라벨명
+	가. 영문대소문자와 숫자, _ , $
+	나. 숫자로시작 불가
+	다. 길이제한은 없다고 본다. (65535자)
+	라. 자바의 예약어(키워드)는 사용 불가
+
+	class, extends, implements, import, 
+	public, protected, private
+	static, final, abstract
+	instanceof
+	if, switch, while, for, do, break, continue, default
+	byte, short, int, long, float, double, boolean
+
+4. System.out.println(), System.out.print()
+	가. 출력할 데이터를 한 개만 전달 가능(아규먼트를 한 개만)
+		System.out.println("결과값="+result);
+		System.out.println("결과값=",result);
+	나. 여러개 하려면 +로 묶어줘야 함
+	다. 대신 전달할 수 있는 데이터의 타입에 제한이 거의 없다.
+		System.out.println("결과값="+result);
+		System.out.println(100);
+		System.out.println('가');
+		System.out.println(3.141592);
+
+5. System.out.printf()
+	가. Java 5(JDK1.5)이후 지원
+	나. System.out.printf("..........")
+	다. System.out.printf("..........", ........)
+	라. System.out.printf("일반문자포멧문자")
+	마. 포맷문자: %정해진문자, %d, %h, %o, %s, %c, %f -> %.3f
+
+
+
+
+
+
+
+

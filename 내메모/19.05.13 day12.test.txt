@@ -1,0 +1,146 @@
+
+  java.lang.System : 모든 멤버(속성(멤버변수), 메서드) static
+	System.in - 표준입력장치(디바이스,키보드)
+	System.out - 표준출력장치(화면, 스크린, 모니터)
+	System.getMilliSeconds()
+	System.gc()
+	System.exit() - main에서는 return
+
+[시험 문제]
+1. 자바언어의 특징
+	운영체제에 독립적이다
+	객체지향언어
+	비교적 배우기 쉽다
+	자동 메모리 관리
+	네트워크의 분산처리를 지원한다.	
+	멀티쓰레드를 지원
+	동적 로딩을 지원
+2. 변수명 적합한거
+	대소문자가 구분되며 길이에 제한이 없다
+	예악어를 사용해서는 안된다. true->x
+	숫자로 시작해서는 안된다
+	특수문자는 _와 $만가능
+3. 반복문에서만 사용가능한 제어문
+	break, continue, default...?
+4. 스위치에서 사용가능한 데이터 타입
+	int와 String
+	조건식 결과는 정수 또는 문자열
+	case문의 값은 정수 상수만 가능 중복 ㄴㄴ
+5. 자바의 기본형 7가지 타입
+	int, char, string, double,.....
+6. 형변환
+	(int)
+7. 값을 데이터에 넣고 선언, 문자열 리터럴 만드는 방법
+	String = "abc";
+8. 증감연산자
+	i++, ++i, 
+9. 인스턴스오브 연산자
+	abc instanceof int;
+10. 파이널 앱스트랙트 특징
+	abstract class 클래스명 [extends 부모클래스명 {
+           	 }
+- 클래스 맴버로 접근가능한거
+	  클래스 앞 : public, (default)
+                  abstract, final
+  	 생	성자 메서드 : public, protected, (default), private
+  	 멤버변수 : public, protected, (default), private
+                	 static, final
+   	메서드 : public, protected, (default), private
+           		abstract, static, final
+   	지역변수 : final     
+11. 생성자 규칙
+12. 오버라이딩 규칙
+	이름이 같아야한다.
+	매개변수가 같아야 한다.
+	변환타입이 같아야한다.
+13. 수퍼 디스
+14. 접근제어자 문제
+	접근제어자 : public, protected, (default), private
+15. 객체생성구문
+16. OOP언어의 특징, 상속구문, 다형성구문, 캡슐화, 추상화
+	코드의 재사용성이 높다.
+	코드의 관리가 용이하다.
+	신뢰성이 높은 프로그래밍을 가능하게 한다.
+17. 콜렉션 API 리스트 셋 맵
+	  리스트 : ArrayList, LinkedList, (Vector)
+  	맵 : HashMap, (Hashtable)
+  	셋 : HashSet, TreeSet, LinkedHashSet
+18. IO api
+19. 랩업 클래스
+			java.lang
+  	byte		Byte
+ 	 short		Short
+ 	 int		Integer
+  	long		Long
+ 	 float		Float
+  	double		Double
+  	char		Character
+  	boolean		Boolean
+20. 다형성구문 2문제
+21. 스트링객체의 특징
+
+부모 자식 순서
+
+[ Java의 IO 프로그래밍 ]
+- 입력과 출력 프로그래밍
+- 프로그램 수행에 필요한 데이터를 읽는다. (입력)
+- 프로그램 실행의 결과를 내보낸다. (출력)
+- 입력: 표준, 파일, 네트워크
+- 출력: 표준, 파일, 네트워크
+- 입출력 대상에 관계없이 스트림이라는 논리적인 구조를 사용한다.
+  즉, 스트림 객체를 사용한다.
+  ------------
+	(1) 입력용과 출력용 나눠져 있다.
+	(2) 바이트 스트림과 문자 스트림으로 나눠져 있다.
+- 주요 API(java.io)
+  File : 파일점검, 파일 생성, 파일 삭제, 파일 이름변경....
+  FileReader, FileWriter
+  BufferedReader, BufferedWriter
+  PrintWriter
+  FileInputStream, FileOutputStream
+  DataInputStream, DataOutputStream
+  InputStreamReader, OutputStreamWriter -->
+	바이트스트림 객체를 문자스트림 객체로 변환하는 브릿지 객체
+
+[ try-catch-with-resource : Java 6? ]
+---------기존의 방식
+  try {
+
+  } catch (....) {
+
+  } finally {
+	close 기능
+  }
+----------트라이캐치위드리소스
+  try(변수선언과객체생성) {
+
+  } catch (....) {
+
+  } 
+	close안해도 됌
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

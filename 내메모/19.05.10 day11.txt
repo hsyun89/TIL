@@ -1,0 +1,86 @@
+  [ Java의 API  ]
+1. java.lang : 프로그래밍 하면서 기본적으로 사용되는 클래스와 인터페이스
+2. java.util : 다양하고 유용한 기능을 제공하는 클래스와 인터페이스
+3. java.net : 통신 프로그램을 개발할 때 필요로 하는 기능을 제공하는 클래스와 인터페이스
+
+자바8 패키지 217개
+
+4. String -  읽는 용도, immutable
+   StringBuffer(StringBuilder) - 편집 용도
+
+	String s= new String("abc");
+
+	s.toUpperCase()
+
+  [ Collection API : 자료구조 API ]
+데이터들의 집합을 좀 더 편하고 효과적으로 다룰 수 있게 지원
+1. 리스트 : 데이터의 저장 순서를 유지한다. 저장되는 데이터의 중복을 체크하지 않는다. 
+	가. ArrayList, LinkedList, (Vector)
+2. 맵 : 이름과 값을 저장한다. 이름은 중복 불가.
+	나. HashMap, (Hashtable)
+3. 셋: 데이터의 저장 순서를 유지하지 않음. 데이터의 중복을 체크
+	다. HashSet, TreeSet, LinkedHashSet
+
+Value3<Date> o = new Value3<Date>()
+
+Value3<String> o = new Value3<String>()
+
+4. 아래와 같은 기본형과 객체 사이에는 자동으로 오토박싱, 오토언박싱이 된다.
+		java.lang
+  byte		Byte
+  short		Short
+  int		Integer
+  long		Long
+  float		Float
+  double		Double
+  char		Character
+  boolean	Boolean
+
+5. Collections 클래스
+  Collection 객체들을 사용하는데 있어서 여러가지 유용한 메서드를 제공해주는 도우미 클래스이다.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
