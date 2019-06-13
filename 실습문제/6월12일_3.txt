@@ -1,0 +1,3 @@
+자바스크립트로 구현한 ajax_exercise1.html 을
+ajax_exercise2.html 로 복사하고
+jQuery 로 구현하여 제출한다.

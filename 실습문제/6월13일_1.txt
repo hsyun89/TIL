@@ -1,0 +1,13 @@
+다음 기능의 서블릿클래스를 생성한다.
+
+(1) 클래스명 : core.MyFirstServlet
+(2) 매핑명 : /myfirst
+(3) GET 방식지원 서블릿
+(4) 기능 : name이라는 이름으로 전달되는 Query 문자열을 추출하고
+ 
+              <h2> xxx 님 반가워요.. 오늘은 x요일입니다!! </h2>
+
+              를 브라우저로 응답한다.
+              
+
+(5) 제출 : MyFirstServlet.java
