@@ -1,0 +1,15 @@
+다음 기능의 JSP를 구현해 본다. 파일명 : latlng.jsp
+
+주소를 Query 문자열로 받아서 
+https://maps.googleapis.com/maps/api/geocode/xml?address=%EC%97%AD%EC%82%BC%EB%8F%99&language=ko&key=AIzaSyCymy5ucS__gaVvSVE_udW4SSO2fLn8MnE
+
+사이트에 요청하고 위도와 경도만 다음과 같이 추출하여 
+출력하는 프로그램을 구현한다.
+
+정상 처리시 ---
+주소 : xxxx
+위도 : xxxx
+경도 : xxxx
+
+오류 발생시 ---
+오류가 발생했어요....

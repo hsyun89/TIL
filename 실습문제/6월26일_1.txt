@@ -1,0 +1,13 @@
+JSTL 실습
+mvc 프로젝트에서.....
+
+meetingView.jsp 를 meetingView_jstl.jsp 로 복사한다.
+소스내용에서 
+최대한 JSTL 태그로 변경해 본다.
+
+
+visitorView.jsp 를 visitorView_jstl.jsp 로 복사한다.
+소스내용에서 
+최대한 JSTL 태그로 변경해 본다.
+
+meetingView_jstl.jsp, visitorView_jstl.jsp 를 제출한다.
