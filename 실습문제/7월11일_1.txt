@@ -1,0 +1,8 @@
+d3.js 를 이용해서 이전에 SVG로 구현한 svgsmile.html에 
+동적인 기능을 넣어보자.
+
+(1) svgexam에 존재하는 svgsmile.html을 복사하여 
+     book 폴더에 d3lab3.html 로 복사한다.
+(2) 0.5초에 한번씩 칼라를 랜덤으로 변경하게 구현해 본다.
+      눈도 좋고 스마일 얼굴도 좋고.....
+(3) d3lab3.html 을 제출한다.
