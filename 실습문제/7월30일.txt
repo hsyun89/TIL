@@ -1,0 +1,52 @@
+﻿[ 실습 1 - vi 에디터 ]
+홈디렉토리에 my 라는 폴더를 생성합니다. my 폴더로 옮겨가서 다음 내용으로 sample.txt를 작성합니다.
+
+[Steve Jobs remarks ]
+The only way to do great work.
+It is just what you love to do.
+If you have not found such a thing yet,
+Keep looking.
+Do not compromise.
+because,
+As with everything your heart does,
+When you find the job, you will know by heart.
+Interesting vi editor learning !!
+Today is Wednesday.
+Interesting vi editor learning !!
+Today is Wednesday.
+Interesting vi editor learning !!
+Today is Wednesday.
+Interesting vi editor learning !!
+Today is Wednesday.
+
+[Gandhi remarks]
+Your faith is your thought,
+Your thoughts soon become words you say,
+What you say is your act,
+Your actions soon become your habits,
+Your habits soon become your values,
+Your values ​​soon become your destiny.
+  
+[ 실습 2 : vi 에디터 ]
+my 폴더의 sample.txt 를 복사하여 edit.txt 를 생성한 후에 파일 내용을 다음과 같이 수정한다.
+
+[Steve Jobs ]
+The only way to do great work. It is just what you love to do.
+If you have not found such a thing yet, Keep looking.
+*************************
+Do not compromise.
+because,
+@@As with everything your heart does,
+When you @@@find the job, you will know by heart.!!!!!
+Interesting vi editor !!
+Today is Tuesday.
+
+[[[[Gandhi remarks]]]]
+Your faith is your~~~ thought,
+Your thoughts soon become words you Say,
+What you say is your act,
+Your actions soon become your Habits,
+Your habits soon become your Values,
+Your values ​​soon become your Destiny.
+
+생성한 sample.txt와 edit.txt를 윈도우로 복사한 다음 강사 컴퓨터에 두 개 파일을 모두 제출합니다.
