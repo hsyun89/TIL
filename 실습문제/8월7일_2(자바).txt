@@ -1,0 +1,4 @@
+ThreadLab2.java 를 AnonyThreadLab.java 로 복사한다.
+
+스레드 클래스를 객체 생성해서 java.lang.Thread 클래스의 객체를 
+생성하는 부분을  Anonymous Inner Local Class (익명 클래스) 정의로 변경해 본다...
