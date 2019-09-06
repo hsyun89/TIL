@@ -1,0 +1,26 @@
+[ Java와 R 연동 실습 - 수행평가 ]
+
+다음에서 제시된 기능을 rjava 패키지에 Java Application으로 구현하여 메일로 제출한다.
+제출파일명 : JavaRLab1.java, JavaRLab2.java(lab.R 활용), lab.R
+              
+
+클래스명 : JavaRLab1
+구현 기능 : R 코드로 제시된 hotel2.txt를 읽고 제일 많이 나온 명사 10개를 
+             Java 코드로 전달하여 
+             다음과 같이 Java 코드로 출력한다.
+
+             R 이 보내온 최빈 명사들 : xxx, xxx, xxx, xxx ...., xxx
+
+
+클래스명 : JavaRLab2
+구현 기능 : R 코드로 제시된 hotel2.txt를 읽고 제일 많이 나온 명사 10개를 
+             명칭과 횟수로 구성되는 데이터프레임을 생성해서 
+             Java 코드로 전달하여 
+             다음과 같이 Java 코드로 출력한다.
+
+             R 이 보내온 최빈 명사들 :
+             xxx  nn
+             xxx  nn
+	xxx  nn
+        
+
