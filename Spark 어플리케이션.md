@@ -8,3 +8,8 @@
 6. spark-submit --master local --class com.example.chapter5.WordCount --name WordCount wc111.jar file///root/sampledata/simple-words.txt
 7. spark-shell --master local
 
+
+
+https://spark.apache.org/docs/2.4.3/sparkr
+
+https://spark.apache.org/docs/2.4.3/api/R/
